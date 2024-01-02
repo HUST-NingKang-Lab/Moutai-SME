@@ -53,6 +53,35 @@ The codes, mathematical equations，softwares and data sources involved in Mouta
 | The labels of LASSO-regularized linear regression |	Thresholds are set based on the engraftment rate and S2FG to determine the label of lasso |
 
 
-### The mathematical equations in Moutai-SME project.
+### The mathematical equations for calculating the QER index.
+We used the relative abundance of microbes of each sample to calculate the Bray‒Curtis distance in the pair of starter vs. post-FG, as well as in the pair of post-FG vs. pre-FG (Figure 3a). The Bray‒Curtis distance between post-FG and starter samples Distance(post_FG_ijk,donor_i), and post-FG and pre-FG samples Distance(pre_FG_i,post_FG_ijk) was calculated by the vegdist() function in R “vegan” package (v2.6-2), in which i {1,2,3,4,5,6}┤ (for example, i=1 represents SME1), j represents the time point in the SMEi process, and k represents the sample k at the j time point in the SMEi process (Figure 3a).
 The calculation of QER index is shown as following:
-
+- The mean distance between post-FG and starter samples can be calculated as
+```
+Mean distance(post_FG_i,donor_i)=∑_j∑_kDistance(post_FG_ijk,donor_i)/n_i
+```
+- The mean distance between post-FG and pre-FG samples can be calculated as
+```
+Mean distance(pre_FG_i,post_FG_i )=∑_j∑_kDistance(post_FG_ijk,pre_FG_i)/n_i
+```
+- n_i represents the number of samples in SMEi process
+- We calculated the sum of the squares within (SSW) of sample distance to calculate the quantitative engraftment rate (QER) value in each SME process. The SSW(post_FG_i,donor_i) can be calculated as
+```
+SSW(post_FG_i,donor_i)=∑_j∑_k(Distance(post_FG_ijk,donor_i)-(∑_kDistance(post_FG_ijk,donor_i)))^2 
+```
+- The SSW(pre_FG_i,post_FG_ijk ) can be calculated as
+```
+SSW(pre_FG_i,post_FG_i )=∑_j∑_k(Distance(post_FG_ijk,pre_FG_i )-(∑_kDistance(post_FG_ijk,pre_FG_i)))^2 
+```
+- The inter-group degree of freedom (df_within_i) in a SME process is the total degree of freedom (n_i) minus the number of time points (m_i,{9,10,8,9,8,5}) and then minus 1, which can be expressed as
+```
+df_within_i=n_i-m_i-1
+```
+- Then the QER(post_FG_i,donor_i ) is calculated by
+```
+QER(post_FG_i,donor_i )=SSW(post_FG_i,donor_i )/df_within_i
+```
+- The QER(pre_FG_i,post_FG_i ) is calculated by
+```
+QER(pre_FG_i,post_FG_i )=SSW(pre_FG_i,post_FG_i )/df_within_i
+```
