@@ -35,4 +35,24 @@ The codes, mathematical equations，softwares and data sources involved in Mouta
 |           UniRef50          |        2022_12        |  https://doi.org/10.1093/bioinformatics/btm098 |              https://www.uniprot.org/             |
 |             Pfam            |        2022_12        |               https://doi.org/10.1093/nar/gkaa913              |            http://pfam-legacy.xfam.org/           |
 
-### The concepts involved in Moutai-SME project and their mathematical equations.
+### The concepts involved in Moutai-SME project.
+|   **Name**  |      **Introduction**      |
+|:---------------------------:|:---------------------:|
+| MSSSF (Multi-stage solid-state fermentation) | SSF (Solid-state fermentation) is a process where there is a porous solid substrate or support for the growth of microorganisms, with a continuous gas phase. MSSSF is a kind of SSF, which has several fermentation stages |
+| SME (Starter microbiota engraftment) | SME means that starter is added to the fermentation system before each round of fermentation stages and mixed with fermented grains. In this process, the bacteria in the starter is transplanted into the fermentation system |
+| Fermentation triad | The pre-SME recipient, the post-SME recipient and the corresponding donor |
+| Distance (post_FGijk, donori) |	The Bray-Curtis distance between post-recipient and donor |  
+| Distance (pre_FGi, post_FGijk) |	The Bray-Curtis distance between pre-recipient and donor |
+| Mean distance (pre_FGi, donori) |	Mean of distance between post recipient and donor |
+| Mean distance (pre_FGi, post_FGi) |	Mean of distance between post recipient and pre_recipient |
+| QER (pre_FGi, donori) | Quatative engraftment rate between post recipient and donor |
+| QER (pre_FGi, post_FGi) |	Quatative engraftment rate between post recipient and pre_recipient |
+| SSW (pre_FGi, donori) |	Sum of Squares Within groups of distance between post recipient and donor |
+| SSW (pre_FGi,post_FGijk) | Sum of Squares Within groups of distance between post_recipient and pre_recipient |
+| dfwithini |	The degrees of freedom within groups |
+| The labels of LASSO-regularized linear regression |	Thresholds are set based on the engraftment rate and S2FG to determine the label of lasso |
+
+
+### The mathematical equations in Moutai-SME project.
+The calculation of QER index is shown as following:
+
