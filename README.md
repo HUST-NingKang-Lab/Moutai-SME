@@ -20,7 +20,6 @@ The codes, mathematical equations，softwares and data sources involved in Mouta
 |          BiG-SCAPE          |         v1.1.5        |    https://doi.org/10.1038/s41589-019-0400-9   |     https://github.com/medema-group/BiG-SCAPE     |
 |             dRep            |         v3.4.0        |     https://doi.org/10.1038/ismej.2017.126     |           https://github.com/MrOlm/drep           |
 |           GTDB-tk           |         v2.1.1        | https://doi.org/10.1093/bioinformatics/btac672 |       https://gtdb.ecogenomic.org/downloads       |
-|          Rosetta2           |          v2.0         |     https://doi.org/10.1006/jmbi.1997.0959     |      https://github.com/h33p/docker-rosetta2      |
 |        **Databases**        | **Date for download** |                   **Reference**                   |                   **Identifier**                  |
 |            eggNOG           |     v5.0; 2022_12     |       https://doi.org/10.1093/nar/gky1085      |       http://eggnog5.embl.de/#/app/downloads      |
 |             KEGG            |        2022_12        |       https://doi.org/10.1093/nar/gkaa970      |    http://kobas.cbi.pku.edu.cn/kobas3/download/   |
