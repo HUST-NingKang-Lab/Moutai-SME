@@ -1,7 +1,7 @@
 # Moutai-SME
 The codes, mathematical equations，softwares and data sources involved in Moutai-SME project.
 
-## The necessary resources of softwares and databases had been provided as following.
+### The necessary resources of softwares and databases had been provided as following.
 |   **Softwares**  |      **Version**      |                   **Reference**                   |                   **Identifier**                  |
 |:---------------------------:|:---------------------:|:----------------------------------------------:|:-------------------------------------------------:|
 |         Trimmomatic         |         v0.38         |  https://doi.org/10.1093/bioinformatics/btu170 |      https://github.com/usadellab/Trimmomatic     |
