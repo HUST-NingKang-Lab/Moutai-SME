@@ -35,3 +35,5 @@ The codes, mathematical equations，softwares and data sources involved in Mouta
 |            TrEMBL           |        2022_12        |      https://doi.org/10.1093/nar/gkac1052      |              https://www.uniprot.org/             |
 |           UniRef50          |        2022_12        |  https://doi.org/10.1093/bioinformatics/btm098 |              https://www.uniprot.org/             |
 |             Pfam            |        2022_12        |               https://doi.org/10.1093/nar/gkaa913              |            http://pfam-legacy.xfam.org/           |
+
+### The concepts involved in Moutai-SME project and their mathematical equations.
