@@ -52,14 +52,11 @@ The codes, mathematical equations，softwares and data sources involved in Mouta
 | dfwithini |	The degrees of freedom within groups |
 | The labels of LASSO-regularized linear regression |	Thresholds are set based on the engraftment rate and S2FG to determine the label of lasso |
 
-
 ### The mathematical equations for calculating the QER index.
 We used the relative abundance of microbes of each sample to calculate the Bray‒Curtis distance in the pair of starter vs. post-FG, as well as in the pair of post-FG vs. pre-FG (Figure 3a). The Bray‒Curtis distance between post-FG and starter samples Distance(post_FG_ijk,donor_i), and post-FG and pre-FG samples Distance(pre_FG_i,post_FG_ijk) was calculated by the vegdist() function in R “vegan” package (v2.6-2), in which i {1,2,3,4,5,6}┤ (for example, i=1 represents SME1), j represents the time point in the SMEi process, and k represents the sample k at the j time point in the SMEi process (Figure 3a).
 The calculation of QER index is shown as following:
 - The mean distance between post-FG and starter samples can be calculated as
-```
-Mean distance(post_FG_i,donor_i)=∑_j∑_kDistance(post_FG_ijk,donor_i)/n_i
-```
+$$Mean distance(\post_FG_i\,donor_i)=∑_j∑_kDistance(post_FG_ijk,donor_i)/n_i$$
 - The mean distance between post-FG and pre-FG samples can be calculated as
 ```
 Mean distance(pre_FG_i,post_FG_i )=∑_j∑_kDistance(post_FG_ijk,pre_FG_i)/n_i
